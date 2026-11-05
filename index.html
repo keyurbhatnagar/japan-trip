@@ -48,15 +48,15 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#showcard').hid
 $('#today').onclick=()=>{let d=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());if(d>='2026-11-06'&&d<='2026-11-18'){day=+d.slice(-2);render();document.querySelector('.date.active').scrollIntoView({block:'nearest',inline:'center'})}else toast('Your trip runs November 6–18. Pick a date below.')};
 function clock(){$('#clock').textContent=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).format(new Date())+' JST'}clock();setInterval(clock,60000);
 Promise.resolve({
-  "updated": "October 29, 2026",
+  "updated": "November 5, 2026",
   "events": [
     {
-        "title": "Dinner — Roan Kikunoi (confirmed, prepaid)",
-        "start": "2026-11-13T18:30:00+09:00",
-        "end": "2026-11-13T20:30:00+09:00",
-        "location": "Roan Kikunoi, 118 Saito-cho, Kiyamachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto 600-8012, Japan",
-        "description": "CONFIRMED — My Concierge Japan reservation #626215, 3 adults. Friday Nov 13, 18:30 JST. Arrive by 18:25. ¥104,363 paid in full; nothing due unless extras ordered (on-site extras cash only). End time 20:30 is an estimate, not confirmed. Over 15 minutes late: reservation cancelled, entry denied, no refund. For delays, changes or cancellations contact My Concierge Japan directly at contactus@myconciergejapan.com; do not contact restaurant or hotel. Smart casual dress; no perfume/cologne/scented deodorant. Avoid T-shirts, shorts, sportswear and beach sandals; bring socks in case of private room. Dietary note recorded: one guest cannot eat beef; no last-minute dietary requests accepted. Cancellation: full refund only until Nov 10 at 15:00 JST; changes must be requested at least 3 days ahead. Show confirmation email on arrival. Source: My Concierge Japan confirmed email Oct 30, 2026.",
-        "url": "https://mail.google.com/mail/u/?authuser=keyurbhatnagar%40gmail.com#all/1a18d3d40836aa7b"
+      "title": "Dinner — Roan Kikunoi (confirmed, prepaid)",
+      "start": "2026-11-13T18:30:00+09:00",
+      "end": "2026-11-13T20:30:00+09:00",
+      "location": "Roan Kikunoi, 118 Saito-cho, Kiyamachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto 600-8012, Japan",
+      "description": "CONFIRMED — My Concierge Japan reservation #626215, 3 adults. Friday Nov 13, 18:30 JST. Arrive by 18:25. ¥104,363 paid in full; nothing due unless extras ordered (on-site extras cash only). End time 20:30 is an estimate, not confirmed. Over 15 minutes late: reservation cancelled, entry denied, no refund. For delays, changes or cancellations contact My Concierge Japan directly at contactus@myconciergejapan.com; do not contact restaurant or hotel. Smart casual dress; no perfume/cologne/scented deodorant. Avoid T-shirts, shorts, sportswear and beach sandals; bring socks in case of private room. Dietary note recorded: one guest cannot eat beef; no last-minute dietary requests accepted. Cancellation: full refund only until Nov 10 at 15:00 JST; changes must be requested at least 3 days ahead. Show confirmation email on arrival. Source: My Concierge Japan confirmed email Oct 30, 2026.",
+      "url": "https://mail.google.com/mail/u/?authuser=keyurbhatnagar%40gmail.com#all/1a18d3d40836aa7b"
     },
     {
       "title": "Stay: Tokyo — Hotel Keihan Tsukiji Ginza Grande",
@@ -69,9 +69,9 @@ Promise.resolve({
     {
       "title": "Haneda arrival & private hotel transfer",
       "start": "2026-11-06T14:05:00+09:00",
-      "end": "2026-11-06T16:00:00+09:00",
-      "location": "Haneda Airport → Hotel Keihan Tsukiji Ginza Grande",
-      "description": "DL0295 ATL–HND arrives 14:05. Driver meets at arrival gate. Hotel check-in\n16:00; collect Oshinobi ticket envelope. Transfer/check-in block ends at\nscheduled check-in, not a precise drive duration. All 4 travelers. Source:\n2611_Sydney Carter_Detailed Itinerary.docx. All times Japan time.\n\n",
+      "end": "2026-11-06T17:30:00+09:00",
+      "location": "Haneda Airport → Rapha Tokyo (5-29-1 Jingumae, Shibuya) → Hotel Keihan Tsukiji Ginza Grande",
+      "description": "DL0295 ATL–HND scheduled arrival 14:05 JST. Private driver meets at arrivals. UPDATED Nov 5 by Oshinobi Travel: driver will drop Keyur at Rapha Tokyo on Nov 6 to collect rental bike; no waiting required. Rapha confirmed bike collection between 17:30 and 19:00 JST. Other travelers continue to hotel; exact drop-off and hotel arrival times not confirmed. Hotel staff can assist with bike storage on arrival. Hotel check-in and ticket-envelope collection still apply. All 4 travelers on initial airport transfer. Sources: Emi Matsuda emails Nov 4–5 and Rapha Tokyo email Nov 2. The original 16:00 end is an earlier hotel check-in estimate, not a confirmed transfer completion time.",
       "url": "https://www.google.com/calendar/event?eid=ZTg4a25ycmJ0azdnOGE3ajBuamp2M3Jsc2sgNzM0ZTJhMDJiNjUxMmJhMjYyMDRlNmExMWNlOTFiOGU3NDY0YzM5YTFlNThhN2I0ZTU3M2IzMWQxMDhjZDZkMkBn&ctz=Asia/Tokyo"
     },
     {
@@ -103,7 +103,7 @@ Promise.resolve({
       "start": "2026-11-07T00:00:00",
       "end": "2026-11-09T00:00:00",
       "location": "5-29-1 Jingumae, Shibuya-ku, Tokyo",
-      "description": "Bike hire from Rapha Tokyo (Jingumae clubhouse). Pickup November 7, return November 8 — pickup and return times are not yet set; confirm with the clubhouse. Shown as a day marker on Nov 7–8 because no times are fixed; send me the pickup/return times and I'll place it on the timeline. Source: your Japan reservations calendar.\n\n",
+      "description": "Factor Monza 54 – David Carson Model, RCC hire Nov 7–8. UPDATED: Rapha Tokyo (Sho) approved early bike pickup on Friday Nov 6 between 17:30 and 19:00 JST, confirmed Nov 2. Airport transfer driver will drop Keyur at Rapha Tokyo (5-29-1 Jingumae, Shibuya) on Nov 6, then others continue to hotel. Rental dates remain Nov 7–8; return time not confirmed. Hotel front desk can assist with bicycle storage. Sources: Rapha Tokyo and Oshinobi Travel emails.",
       "url": ""
     },
     {
@@ -369,6 +369,14 @@ Promise.resolve({
       "location": "Hotel Keihan Tsukiji Ginza Grande → Haneda Airport",
       "description": "Checkout 11:00; leave luggage at hotel during free time. Driver pickup 13:00.\nFlight DL0294 HND–ATL departs 16:25. Transfer end 14:00 is a planning\nestimate; document gives no arrival time. All 4 travelers. Source: 2611_Sydney\nCarter_Detailed Itinerary.docx. All times Japan time.\n\n",
       "url": "https://www.google.com/calendar/event?eid=MXVjOXV1OThtdWJsZHJmdjRpY2J2bnI2YWcgNzM0ZTJhMDJiNjUxMmJhMjYyMDRlNmExMWNlOTFiOGU3NDY0YzM5YTFlNThhN2I0ZTU3M2IzMWQxMDhjZDZkMkBn&ctz=Asia/Tokyo"
+    },
+    {
+      "title": "Rapha Tokyo — confirmed early bike pickup window",
+      "start": "2026-11-06T17:30:00+09:00",
+      "end": "2026-11-06T19:00:00+09:00",
+      "location": "Rapha Tokyo, 5-29-1 Jingumae, Shibuya City, Tokyo, Japan",
+      "description": "CONFIRMED by Sho at Rapha Tokyo on Nov 2: collect RCC Factor Monza 54 rental bike on Friday Nov 6, arriving between 17:30 and 19:00 JST. This is an arrival window, not a 90-minute appointment. Airport transfer driver will drop Keyur here; no need for driver to wait. Rental remains booked Nov 7–8; return time not confirmed. Sources: Rapha Tokyo email Nov 2 and Emi Matsuda Nov 5.",
+      "url": "https://mail.google.com/mail/u/?authuser=keyurbhatnagar%40gmail.com#all/1a19ba0f597f0283"
     }
   ]
 }
